@@ -1,0 +1,69 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="application-root"></div>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script type="text/babel">
+    
+        const appRoot = document.querySelector("#application-root");
+
+        function App() {
+            return (
+                <div>
+                    <header> 
+                        <h1>Sally Student Resume</h1>
+                    </header>
+                    <main>
+                        <section>
+                        <h2>Contact Information</h2>
+                            <h3>Sally Student</h3>
+                            <address> <a href= "mailto:Sallystudent101@email.com">Sallystudent101@email.com</a><br />
+                            <a href= "tel+11234567890">123-456-7890</a>
+                            </address>
+                            <img src = "https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt= "Sally Student standing confidently."/>
+                        </section>
+
+                        <section>
+                        <h2>Education History</h2>
+                                <ul>
+                                <li><b>Y High School (2000-2004)</b></li>
+                                <li><b>X Community College (2004-2006)</b></li>
+                                <i>Major: Computer Science</i><br />
+                                <li><b>Z University (2007-2011)</b></li>
+                                <i>Bachelors Degree in Computer Science</i> 
+                                </ul>
+                        </section>
+                        <address>
+
+                        </address>
+                    </main>
+                </div>
+            );
+        }
+
+        ReactDOM.render(
+        <App />,
+        document.querySelector('#application-root')
+      );
+      
+    </script>
+
+</body>
+
+</html>
